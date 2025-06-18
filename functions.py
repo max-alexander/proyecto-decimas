@@ -43,3 +43,16 @@ def buscar_contacto(contactos):
     else:
         print(" Contacto no encontrado.")
     print()
+
+
+def eliminar_contacto(contactos):
+    nombre_eliminar = input("Ingrese el nombre del contacto que desea eliminar: ").strip().lower()
+    for i, x in enumerate(contactos):
+        if x[0].lower() == nombre_eliminar:
+            del contactos[i]
+            print(" Contacto eliminado exitosamente.\n")
+            return contactos
+
+    print(" Contacto no encontrado.\n")
+    return contactos
+        

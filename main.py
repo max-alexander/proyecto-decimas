@@ -28,5 +28,20 @@ while True:
             print("3.	Buscar un contacto por nombre.")
             buscar_contacto(contactos)
 
+            
+        elif opcion == 4:
+            os.system("cls")
+            print("4.	Eliminar un contacto.")
+            contactos = eliminar_contacto(contactos)
+            
+            
+        elif opcion == 5:
+            os.system("cls")
+            print("5.	Salir del programa.")
+            break
+            
+        else:
+            print("ingrese una opcion dentro de las disponibles 1 al 5")
+
     except:
         print("Intentalo nuevamente")
