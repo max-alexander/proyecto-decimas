@@ -11,6 +11,18 @@ while True:
     print("5.	Salir del programa.")
     try:
         opcion = int(input("ingrese la opcion que necesita\n"))
+
+        if opcion == 1:
+            print("1.	Agregar un contacto: nombre, teléfono, email.")
+            contactos = agregar_contacto(contactos)
+            time.sleep(3)
+            os.system("cls")
+
+        elif opcion == 2:
+            os.system("cls")
+            print("2.   Listar contactos: mostrar todos los contactos guardados.")
+            listar_contactos(contactos)
+    
     except:
-        print
+        print("Intentalo nuevamente")
     
