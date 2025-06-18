@@ -1,8 +1,9 @@
 from functions import *
-import os, time
+import os
+import time
 os.system("cls")
 
-contactos=[]
+contactos = []
 while True:
     print("1.	Agregar un contacto: nombre, teléfono, email.")
     print("2.      Listar contactos: mostrar todos los contactos guardados.")
@@ -22,7 +23,10 @@ while True:
             os.system("cls")
             print("2.   Listar contactos: mostrar todos los contactos guardados.")
             listar_contactos(contactos)
-    
+        elif opcion == 3:
+            os.system("cls")
+            print("3.	Buscar un contacto por nombre.")
+            buscar_contacto(contactos)
+
     except:
         print("Intentalo nuevamente")
-    
