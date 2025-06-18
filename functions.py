@@ -19,3 +19,13 @@ def agregar_contacto(contactos):
         contactos.append(contacto)
         print(" Contacto agregado exitosamente.\n")
         return contactos
+
+
+def listar_contactos(contactos):
+    if not contactos:
+        print(" No existen contactos guardados.\n")
+    else:
+        print("\n Lista de contactos:")
+        for i, x in enumerate(contactos, start=1):
+            print(f"{i}. Nombre: {x[0]}, Teléfono: {x[1]}, Email: {x[2]}")
+    print()
